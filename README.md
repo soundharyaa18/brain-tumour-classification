@@ -19,7 +19,7 @@ Classical machine-learning baseline that classifies brain MRI slices into four c
 
 ![Example MRI slices, one per class](images/class_examples.png)
 
-*One example test-set slice per class (glioma, meningioma, pituitary tumour, no tumour), taken from the Kaggle dataset above. They illustrate the four classes the model is trained to separate; they are not model predictions.*
+*One axial test-set slice per class (glioma, meningioma, pituitary tumour, no tumour), taken from the Kaggle dataset above. Scan sequence, zoom and slice level vary between images. They illustrate the four classes the model is trained to separate; they are not model predictions.*
 
 ## How to run
 
