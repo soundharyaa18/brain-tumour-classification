@@ -1,0 +1,4 @@
+*.mat
+brain_mri/
+archive*/
+*.asv
