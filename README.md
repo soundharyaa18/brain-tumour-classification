@@ -13,7 +13,7 @@ Classical machine-learning baseline that classifies brain MRI slices into four c
 
 ## Dataset
 
-[Brain Tumor MRI Dataset (Kaggle, Masoud Nickparvar)](https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset). Images are not included in this repository. Download and unzip so that the folder `brain_mri/` contains `Training/` and `Testing/` (1,400 training and 400 test images per class in the version used).
+[Brain Tumor MRI Dataset (Kaggle, Masoud Nickparvar)](https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset). The dataset is not included in this repository (only a few example slices and the result figures are in `images/`). Download and unzip so that the folder `brain_mri/` contains `Training/` and `Testing/` (1,400 training and 400 test images per class in the version used).
 
 ## Example images
 
