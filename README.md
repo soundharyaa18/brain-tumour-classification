@@ -29,7 +29,15 @@ evaluate_model   % prints metrics and saves RandomForest_confusion.png
 classify_image('brain_mri/Testing/glioma/<image>.jpg')
 ```
 
-Requires MATLAB with the Image Processing Toolbox and the Statistics and Machine Learning Toolbox. Change `datasetPath` at the top of the scripts if your folder has a different name.
+Change `datasetPath` at the top of `train_model.m` and `evaluate_model.m` if your dataset folder has a different name.
+
+## Requirements
+
+- MATLAB R2020a or later (developed and run in MATLAB Online)
+- Image Processing Toolbox (`imresize`, `medfilt2`, `adapthisteq`)
+- Computer Vision Toolbox (`extractHOGFeatures`)
+- Statistics and Machine Learning Toolbox (`TreeBagger`, `confusionmat`, `confusionchart`)
+- The dataset (see above) unzipped into `brain_mri/`. Feature extraction plus training takes a few minutes and a few GB of RAM.
 
 ## Results
 
