@@ -15,6 +15,12 @@ Classical machine-learning baseline that classifies brain MRI slices into four c
 
 [Brain Tumor MRI Dataset (Kaggle, Masoud Nickparvar)](https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset). Images are not included in this repository. Download and unzip so that the folder `brain_mri/` contains `Training/` and `Testing/` (1,400 training and 400 test images per class in the version used).
 
+## Example images
+
+![Example MRI slices, one per class](images/class_examples.png)
+
+*One example test-set slice per class (glioma, meningioma, pituitary tumour, no tumour), taken from the Kaggle dataset above. They illustrate the four classes the model is trained to separate; they are not model predictions.*
+
 ## How to run
 
 ```matlab
