@@ -33,10 +33,24 @@ Requires MATLAB with the Image Processing Toolbox and the Statistics and Machine
 
 ## Results
 
-*Results to be added after the final run of `train_model.m` and `evaluate_model.m`.*
+Test set: 1,600 images (400 per class). Model: Random Forest (100 trees) on HOG features, trained with `train_model.m` and evaluated with `evaluate_model.m`.
+
+**Overall accuracy: 84.0%** (1,344 of 1,600 correct)
+
+| Class | Precision | Recall | F1 |
+|---|---|---|---|
+| Glioma | 0.911 | 0.613 | 0.732 |
+| Meningioma | 0.775 | 0.835 | 0.804 |
+| No tumour | 0.793 | 0.995 | 0.882 |
+| Pituitary | 0.922 | 0.918 | 0.920 |
+
+![Confusion matrix](images/confusion_matrix.png)
+
+Glioma is the hardest class: only 245 of 400 test gliomas are recognised, and most of the rest are labelled meningioma (72) or no tumour (71). Pituitary and no-tumour slices are classified most reliably.
 
 ## Limitations
 
 - Classical hand-crafted-feature baseline; deep-learning approaches are expected to perform better.
+- Glioma recall is low (0.61), so many gliomas are missed; the model should not be used for any clinical purpose.
 - Single train/test split, no cross-validation.
 - Research and learning project only, not a medical device.
